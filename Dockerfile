@@ -19,7 +19,7 @@ COPY requirements.txt .
 
 # 6. Upgrade pip and install PyTorch (ARM64 default wheels are already CPU-only and lightweight)
 RUN pip install --upgrade pip setuptools wheel && \
-    pip install torch torchvision torchaudio
+    pip install --no-cache-dir torch torchvision torchaudio
 
 # 7. Install all the other Python libraries (Langchain, Streamlit, etc.)
 RUN pip install --no-cache-dir -r requirements.txt
