@@ -1,0 +1,14 @@
+---
+apiVersion: bitnami.com/v1alpha1
+kind: SealedSecret
+metadata:
+  name: ghcr-api-key
+  namespace: anime-recommender
+spec:
+  encryptedData:
+    .dockerconfigjson: AgAuAHhz3IIBXf7WRGhrTL6PDum0+9lMCH0DM4IKK8EjJ2gxcjcxT3La6XL/jv+NitkpbaFLwyPlrwPl42ayeQcNja0NwrOPnYTAY/ET0iKOb5hOhvd0SgSbiZnFtX2ZD66OcFQHvf/SGZO7GA+3tPKhwKoo5XJm5+NSA845F6heJh1mTl93qlt5BM8XwN9zoSZLvmlP+5CEXnVfrmE4PeUQYmiTZst7c23seEoAnNULIPNpdllplrmA+3+B/qrykhqw1MmLq3k0O56taPjSi+pKW9chRdqSjvLpEbTkvOG1NdmiXVoX+YyDpQFSFpMDnFF7K63M7vHoHdwZHUZbUeYxoje8M10I+UpHkJrWfVnC4E6mAL4XofpBsDv4/LYKn5YSutdERHWNCiw95w22ph1DiZPM5nsZzIsWG6vk3atzbjX4aE5XqKMMjh0u87hPKJI9XKrENE6jRc8LByGIVkCyfzQGxG8kci6HTVyzaAcEbJCH4CsVjfukZGyVQizTSmEjf+0LLsgmQmuhCBlhU5z63xvz14fdoN50oeUOhArdC2QLbWcQd+43/gZJ/jDtMvYhvsLqnnh0ENDjhZP1R/RU8v1EzjP10w0rO2D+0mq/uIGe8ApjUqscQhUtxo4/CQ81soXhIuB2xD4fvwdIWNjgNJNG4Lxts8RjoGm8gGLlQqAzA9DeKywABA/aFdx35+T5tHM67dp6kOQMqS8UhLeXqMhTMNW4TA0d8Le70tvkrbaFKGukjCW29smrO1W4E57ORflyTT0BAWtJPq7rwko2ZMdC9YO0yinsweqOA+tHeh5+aOQk5PNlXkhfT5bFXTGUXV9cLI2jaOIUUhMwg5wmLQCrDcFm9dNpasSO8Qd05cqBNQM8XaDdjY0feG/zIUCgDArJjm5i64Bua1kVAllux1zw/LXzNStEIj2TtdSuviascw==
+  template:
+    metadata:
+      name: ghcr-api-key
+      namespace: anime-recommender
+    type: kubernetes.io/dockerconfigjson

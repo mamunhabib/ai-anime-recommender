@@ -1,0 +1,7 @@
+Metadata-Version: 2.4
+Name: ai_anime_recommender
+Version: 0.1
+Requires-Dist: langchain
+Requires-Dist: chromadb
+Requires-Dist: pandas
+Dynamic: requires-dist

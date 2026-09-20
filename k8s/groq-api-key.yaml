@@ -1,0 +1,13 @@
+---
+apiVersion: bitnami.com/v1alpha1
+kind: SealedSecret
+metadata:
+  name: groq-api-key
+  namespace: anime-recommender
+spec:
+  encryptedData:
+    GROQ_API_KEY: AgCy6CrhTKxXVy758V12uSb2/QY9geFByAwjmrYv9VXCgFOkFZG9/d6Zzt7So4rw/CIZhqHSVdzPt2o7fdkOPLSt1cvqReCsu+rxFcZ8L1RxpjVgfyV837ZhIQAh6/KGaZiDi3xGEz9xzQ/pqGYiW9yhJlYz3aR26JErJZaqOwoqtMqqzQfjnIplea43xENOEUWx8lXa5eZlTEYpOwMA95dhGOmobBzTInyMZM1AfsjMzz/EuKL6fsmeqklWnyqhHgpaQlkh7/a7Iry7AmOLy993p+j5vyRKAQQF/hrzZYr8Zh3qi0TLnjBXClvO3n48j0FrbwCj1eVWICTA/25ynuK+V1BeV1GkJ3vCxI7v9RT/UTL1Uv4Ij7BnB5ZogYdQ5hccix9MOh3pj8k3kzmiKzvoRTHrAVZBKcIJSdWZiLjj0kQjKmqhlgalF4XG/ZXhJk2f/ifrAyJtpYubDJTHkng7nmYDradraicLlDR9Q6pz0cmNGbft/bJVKftjYEoDFyHrdSp7WJSd6zFg2PUZf+TMupBLoj7v2ARO5LgdJlFUJe9mTA5DWnQzXGUXoNZQSf7cr1L33A9M/l+cDJCdSqb22elf2BLECxYodwOuOhqYOYQ+QTjRSfqbwYyALcmGBWIJzzgwpohD9WW5xozpTMN3i/4AxQhiCfcZ927+uqKN3lfCLV5m2fq23Z1FbnlSBZYQNf24gWTy8+QZzHjDGoE73pErPctfz4N2q91RcfCaJ+mVb2Tf+c7fDebx9mHdIdBl1Z6NZ86DtQ==
+  template:
+    metadata:
+      name: groq-api-key
+      namespace: anime-recommender
