@@ -17,8 +17,9 @@ RUN apt-get update && apt-get install -y \
 # 5. Copy just the requirements file first
 COPY requirements.txt .
 
-# 6. Install CPU-only PyTorch FIRST to prevent pulling the 5GB NVIDIA GPU version!
-RUN pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+# 6. Upgrade pip and install PyTorch (ARM64 default wheels are already CPU-only and lightweight)
+RUN pip install --upgrade pip setuptools wheel && \
+    pip install torch torchvision torchaudio
 
 # 7. Install all the other Python libraries (Langchain, Streamlit, etc.)
 RUN pip install --no-cache-dir -r requirements.txt
